@@ -673,7 +673,7 @@ export default {
 <style scoped>
 .fixed-element {
   position: fixed;
-  top: 40vh;
+  top: 20vh;
   left: 50%;
   transform: translateX(-50%);
   width: 84%;
