@@ -1,0 +1,28 @@
+
+@use 'now-ui-dashboard/index' as *;
+
+@use 'now-ui-dashboard/variables';
+@use 'now-ui-dashboard/mixins';
+
+// Core CSS
+@use 'now-ui-dashboard/buttons';
+@use 'now-ui-dashboard/pagination';
+@use 'now-ui-dashboard/misc';
+
+// components
+@use 'now-ui-dashboard/navbar';
+@use 'now-ui-dashboard/images';
+@use 'now-ui-dashboard/nucleo-outline';
+@use 'now-ui-dashboard/sidebar-and-main-panel';
+@use 'now-ui-dashboard/cards';
+@use 'now-ui-dashboard/footers';
+
+@use 'now-ui-dashboard/responsive';
+
+// Plugins CSS
+@use 'now-ui-dashboard/plugins/plugin-perfect-scrollbar';
+
+
+
+
+

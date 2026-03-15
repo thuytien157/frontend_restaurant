@@ -1,0 +1,9 @@
+@use 'variables' as vars;
+
+img{
+    max-width: 100%;
+    border-radius: vars.$border-radius-small;
+}
+.img-raised{
+    box-shadow: vars.$box-shadow-raised;
+}

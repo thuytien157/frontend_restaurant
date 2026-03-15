@@ -1,0 +1,137 @@
+@use './variables' as vars;
+
+.pagination{
+    .page-item .page-link{
+        border: 0;
+        border-radius: 30px !important;
+        transition: all .3s;
+        padding: 0px 11px;
+        margin: 0 3px;
+        min-width: 30px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        color: vars.$black-color;
+        cursor: pointer;
+        font-size: vars.$font-size-base;
+        text-transform: uppercase;
+        background: transparent;
+        outline: none;
+
+        &:hover,
+        &:focus{
+            color: vars.$black-color;
+            background-color: vars.$opacity-gray-3;
+            border: none;
+        }
+    }
+
+    .arrow-margin-left,
+    .arrow-margin-right{
+        position: absolute;
+    }
+
+    .arrow-margin-right{
+        right: 0;
+    }
+
+    .arrow-margin-left{
+        left: 0;
+    }
+
+    .page-item.active > .page-link{
+        color: vars.$white-color;
+        box-shadow: vars.$box-shadow;
+
+        &,
+        &:focus,
+        &:hover{
+            background-color: vars.$red-color;
+            border-color: vars.$red-color;
+            color: vars.$white-color;
+        }
+    }
+
+    .page-item.disabled > .page-link{
+        opacity: .5;
+    }
+
+    // Colors
+    &.pagination-info{
+        .page-item.active > .page-link{
+            &,
+            &:focus,
+            &:hover{
+                background-color: vars.$brand-info;
+                border-color: vars.$brand-info;
+            }
+        }
+    }
+
+    &.pagination-success{
+        .page-item.active > .page-link{
+            &,
+            &:focus,
+            &:hover{
+                background-color: vars.$brand-success;
+                border-color: vars.$brand-success;
+            }
+        }
+    }
+
+    &.pagination-primary{
+        .page-item.active > .page-link{
+            &,
+            &:focus,
+            &:hover{
+                background-color: vars.$brand-primary;
+                border-color: vars.$brand-primary;
+            }
+        }
+    }
+
+    &.pagination-warning{
+        .page-item.active > .page-link{
+            &,
+            &:focus,
+            &:hover{
+                background-color: vars.$brand-warning;
+                border-color: vars.$brand-warning;
+            }
+        }
+    }
+
+    &.pagination-danger{
+        .page-item.active > .page-link{
+            &,
+            &:focus,
+            &:hover{
+                background-color: vars.$brand-danger;
+                border-color: vars.$brand-danger;
+            }
+        }
+    }
+
+    &.pagination-neutral{
+        .page-item > .page-link{
+            color: vars.$white-color;
+
+            &:focus,
+            &:hover{
+                background-color: vars.$opacity-2;
+                color: vars.$white-color;
+            }
+        }
+
+        .page-item.active > .page-link{
+            &,
+            &:focus,
+            &:hover{
+                background-color: vars.$white-bg;
+                border-color: vars.$white-bg;
+                color: vars.$brand-primary;
+            }
+        }
+    }
+
+}
