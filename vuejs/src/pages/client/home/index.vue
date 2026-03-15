@@ -366,7 +366,7 @@ export default {
     const getFood = async () => {
   try {
    
-    await getFoodByCategory(6); 
+    await getFoodByCategory(2); 
   } catch (error) {
     console.error("Lỗi khi load thực đơn mặc định:", error);
   }
