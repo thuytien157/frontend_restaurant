@@ -364,13 +364,13 @@ export default {
     }
 
     const getFood = async () => {
-      try {
-        const res = await axios.get(`${API_URL}/home/foods`)
-        foods.value = res.data.map((item) => ({ ...item, type: 'food' }))
-      } catch (error) {
-        console.error(error)
-      }
-    }
+  try {
+   
+    await getFoodByCategory(6); 
+  } catch (error) {
+    console.error("Lỗi khi load thực đơn mặc định:", error);
+  }
+};
 
     const getFoodByCategory = async (categoryId) => {
       try {
